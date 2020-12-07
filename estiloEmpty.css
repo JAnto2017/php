@@ -1,0 +1,14 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+#centrado{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+#error{
+    color: blueviolet;
+    font-size: 12px;
+}

@@ -27,13 +27,26 @@
                 <tr>
                     <td></td>
                     <td><input type="submit" value="Procesar"></td>
-                    <td><input type="submit" value="Limpiar"></td>
+                    <td><input type="reset" value="Limpiar"></td>
                 </tr>
 <!-- PHP -->
 <?php
-    $empleado = $_POST['txtEmp'];
-    $horas = $_POST['txtHor'];
-    $tarifa = $_POST['txtTar'];
+    if(!is_numeric($_POST['txtEmp'])){
+        echo 'Intro EMPLEADOS';
+    }else{
+        $empleado = $_POST['txtEmp'];
+    }
+    if (!is_numeric($_POST['txtHor'])) {
+        echo 'Intro HORAS';
+    }else {
+        $horas = $_POST['txtHor'];
+    }
+    if (!is_numeric($_POST['txtTar'])) {
+        echo 'Intro TARIFA';
+    }else {
+        $tarifa = $_POST['txtTar'];
+    }
+    
     $sueldoBruto = $horas * $tarifa;
     $descEssalud = $sueldoBruto * 0.12;
     $descAFP = $sueldoBruto * 0.10;
@@ -54,25 +67,25 @@
                 </tr>
                 <tr>
                     <td>Sueldo bruto</td>
-                    <td><?php echo $sueldoBruto; ?></td>
+                    <td><?php echo number_format($sueldoBruto,2)." €"; ?></td>
                 </tr>
                 <tr>
                     <td>Descuento ESSALUD</td>
-                    <td><?php echo $descEssalud; ?></td>
+                    <td><?php echo number_format($descEssalud,2)." €"; ?></td>
                 </tr>
                 <tr>
                     <td>Descuento AFP</td>
-                    <td><?php echo $descAFP; ?></td>
+                    <td><?php echo number_format($descAFP,2)." €"; ?></td>
                 </tr>
                 <tr>
                     <td>Sueldo Neto</td>
-                    <td><?php echo $sueldoNeto; ?></td>
+                    <td><?php echo $sueldoNeto." €"; ?></td>
                 </tr>
             </table>
         </form>
     </section>
     <footer>
-        <h6 id="centrado"></h6>
+        <h6 id="centrado">Datos reservados</h6>
     </footer>
 </body>
 </html>
