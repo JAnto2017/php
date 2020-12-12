@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios-2</title>
+</head>
+<body>
+    <h1>Formulario con Radio-button</h1>
+    <p>
+        Cada <i>text</i> tiene un <i>name</i> DIFERENTE. Los dos controles de tipo radio tienen el MISMO nombre. Esto es necesario para que el navegador sepa que los dos controles están relacionados.
+    </p>
+    <p>
+        Desde la otra página accederemos al <b>value</b> del control seleccionado. Por último disponemos un control de tipo <b>submit</b> para el envío de los datos del formulario.
+    </p>
+    <form action="pagina4.php" method="post">
+        Ingrese primer valor:
+        <input type="text" name="valor1"><br>
+        Ingrese segundo valor:
+        <input type="text" name="valor2"><br>
+        <input type="radio" name="radio1" value="suma">Sumar    
+        <br>
+        <input type="radio" name="radio1" value="resta">Restar
+        <br>
+        <input type="submit" value="Operar" name="operar">
+    </form>
+</body>
+</html>

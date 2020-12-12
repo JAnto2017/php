@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios-4</title>
+</head>
+<body>
+    <h1 style="color: aqua;">Formulario-4</h1>
+    <hr>
+    <p style="color:blue">
+        Formulario que solicita la carga de dos enteros, uno en cada <i>text</i> Disponer un control de tipo <i>select</i> que nos permita seleccionar si queremos sumar o restar los dos valores ingresados.
+    </p>
+    <hr>
+    <form action="pagina8.php" method="post">
+        Ingrese primer valor:
+        <input type="text" name="valor1" id=""><br>
+        Ingrese segundo valor:
+        <input type="text" name="valor2" id=""><br>
+        <select name="operacion" id="">
+            <option value="suma">Sumar</option>
+            <option value="resta">restar</option>
+        </select>
+        <br>
+        <input type="submit" value="Operar">
+    </form>
+    <hr>
+    <p style="color:cadetblue">
+        Cada opción tiene un valor <b>(value)</b> El seleccionado es el que se enviará a la página que procesa el formulario. El texto que aparece dentro del control es el que disponemos entre las marcas option.
+    </p>
+</body>
+</html>
