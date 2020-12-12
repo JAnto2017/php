@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+#centrado{
+    text-align: center;
+}
+table {
+    margin: auto;
+}
+img {
+    margin :auto;
+    display: block;
+}
+td {
+    border: solid 10px #006699;
+    border-top: #006699;
+    border-right: #006699;
+    border-left: #006699;
+    border-bottom: #006699;
+}
+table th{
+    background-color: #b9c9fe;
+}
+#resaltado{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+}
+#derecha{
+    text-align: right;
+}
+#totales{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    text-align: right;
+}
