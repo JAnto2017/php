@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHIVOS</title>
+    <style>
+        h1{
+            color:blue;
+            font-style: oblique;
+        }
+        p{
+            color:chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Archivos</h1><hr>
+    <p>
+        Poder registrar información en el servidor. Disponemos de dos herramientas: <i>archivos de texto, bases de datos</i>
+    </p>
+    <hr>
+    <p>
+        Implementamos un libro de visitas. Planteamos dos páginas, un formulario para realizar la carga del nombre del visitante y sus comentarios (disponemos de un objeto de tipo <b>text</b> y otro de tipo <b>textarea</b>)
+    </p>
+    <hr>
+    <form action="archivos02.php" method="post">
+        Intro nombre:
+        <input type="text" name="nombre" id=""><br>
+        Comentarios: <br>
+        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
